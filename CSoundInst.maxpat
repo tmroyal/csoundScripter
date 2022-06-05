@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1946.0, -744.0, 995.0, 932.0 ],
+		"rect" : [ 1923.0, -969.0, 1878.0, 1101.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -40,23 +40,191 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
+					"fontface" : 1,
+					"fontsize" : 12.0,
+					"id" : "obj-50",
+					"linecount" : 2,
+					"maxclass" : "live.comment",
+					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 726.0, 536.0, 45.0, 45.0 ]
+					"patching_rect" : [ 939.0, 550.5, 188.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 95.0, 8.049994051456451, 87.0, 35.0 ],
+					"text" : "CSound Live\nInstrument",
+					"textjustification" : 0
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-54",
-					"linecount" : 3,
-					"maxclass" : "comment",
+					"id" : "obj-46",
+					"maxclass" : "live.line",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 191.0, 636.0, 150.0, 47.0 ],
-					"text" : "wave\nfiles\ndesign"
+					"patching_rect" : [ 1276.0, 199.5, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 543.0, 0.899991810321808, 5.0, 173.100008189678192 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 969.0, 199.5, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 391.0, 0.899991810321808, 5.0, 173.100008189678192 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "Sends a float value to the Lua script fdial method.",
+					"id" : "obj-3",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 369.0, 42.0, 41.0, 48.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 498.666666666666629, 118.650003015995026, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_info" : "Sends a float value to the Lua script fdial method.",
+							"parameter_longname" : "Float 9",
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "Float 9",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "Float9"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 954.0, 184.5, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 91.0, 51.349998533725739, 296.5, 10.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 954.0, 184.5, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 84.0, 0.899991810321808, 5.0, 173.100008189678192 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 954.0, 184.5, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.599997043609619, 84.949995905160904, 73.999998867511749, 5.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 10.5,
+					"id" : "obj-16",
+					"maxclass" : "live.comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 939.0, 550.5, 163.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.599997043609619, 0.899991810321808, 68.599998593330383, 19.0 ],
+					"text" : "CSound File",
+					"textjustification" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 48.0, 976.0, 62.0, 22.0 ],
+					"text" : "prepend c"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 48.0, 1023.0, 58.0, 22.0 ],
+					"text" : "s ---script"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 334.0, 969.0, 55.0, 22.0 ],
+					"text" : "s ---error"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 48.0, 770.0, 54.0, 22.0 ],
+					"text" : "r ---reinit"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-18",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "fileNameLoader.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 48.0, 822.0, 305.0, 129.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 91.0, 61.199996292591095, 305.0, 103.700007110834122 ],
+					"viewvisibility" : 1
 				}
 
 			}
@@ -232,7 +400,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 270.0, 748.0, 97.0, 22.0 ],
+					"patching_rect" : [ 439.0, 746.0, 97.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -256,7 +424,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 622.0, 83.0, 44.0, 15.0 ],
+					"patching_rect" : [ 622.0, 83.0, 62.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.599997043609619, 111.500000774860382, 68.599998593330383, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Off", "On" ],
@@ -274,17 +444,6 @@
 ,
 					"text" : "Compile",
 					"varname" : "Edit Button[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 775.0, 770.0, 35.0, 22.0 ],
-					"text" : "dac~"
 				}
 
 			}
@@ -354,6 +513,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 253.0, 312.0, 44.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 344.0, 8.049994051456451, 44.0, 18.0 ],
 					"text" : "Toggle 4",
 					"textjustification" : 0
 				}
@@ -366,6 +527,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 200.0, 312.0, 50.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 285.666666666666742, 8.049994051456451, 50.0, 18.0 ],
 					"text" : "Toggle 3",
 					"textjustification" : 0
 				}
@@ -381,6 +544,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 253.0, 335.0, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 344.0, 31.049994051456451, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -409,6 +574,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 200.0, 335.0, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 287.666666666666742, 31.049994051456451, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -437,6 +604,8 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 326.0, 42.0, 41.0, 48.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 453.333333333333314, 118.650003015995026, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Sends a float value to the Lua script fdial method.",
@@ -463,6 +632,8 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 283.0, 42.0, 41.0, 48.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 408.0, 118.650003015995026, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Sends a float value to the Lua script fdial method.",
@@ -489,6 +660,8 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 242.5, 42.0, 41.0, 48.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 498.666666666666629, 64.349998533725739, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Sends a float value to the Lua script fdial method.",
@@ -515,6 +688,8 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 200.0, 42.0, 41.0, 48.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 453.333333333333314, 64.349998533725739, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Sends a float value to the Lua script fdial method.",
@@ -535,7 +710,7 @@
 				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
-					"numinlets" : 8,
+					"numinlets" : 9,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -576,8 +751,32 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 559.0, 98.0, 54.0, 22.0 ],
+									"text" : "fdial9 $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-2",
+									"index" : 9,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 399.5, 40.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-19",
 									"maxclass" : "message",
@@ -803,6 +1002,13 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-55", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-11", 0 ]
 								}
@@ -861,6 +1067,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-55", 0 ],
 									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
@@ -945,6 +1158,8 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 155.0, 42.0, 41.0, 48.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 408.0, 60.349998533725739, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Sends a float value to the Lua script fdial method.",
@@ -971,6 +1186,8 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 112.0, 42.0, 41.0, 48.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 498.666666666666629, 8.049994051456451, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Sends a float value to the Lua script fdial method.",
@@ -997,6 +1214,8 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 71.5, 42.0, 41.0, 48.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 453.333333333333314, 8.049994051456451, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Sends a float value to the Lua script fdial method.",
@@ -1023,6 +1242,8 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 29.0, 42.0, 41.0, 48.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 408.0, 8.049994051456451, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Sends a float value to the Lua script fdial method.",
@@ -1293,6 +1514,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 137.0, 318.0, 44.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 233.333333333333371, 8.049994051456451, 44.0, 18.0 ],
 					"text" : "Toggle 2",
 					"textjustification" : 0
 				}
@@ -1305,6 +1528,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 84.0, 318.0, 50.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 175.0, 8.049994051456451, 50.0, 18.0 ],
 					"text" : "Toggle 1",
 					"textjustification" : 0
 				}
@@ -1320,6 +1545,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 137.0, 341.0, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 231.333333333333371, 31.049994051456451, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -1348,6 +1575,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 84.0, 341.0, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 175.0, 31.049994051456451, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -1380,6 +1609,8 @@
 					"parameter_enable" : 1,
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 805.0, 139.0, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.599997043609619, 21.899991810321808, 68.599998593330383, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -2152,7 +2383,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 517.0, 183.0, 74.0, 20.0 ],
-									"restore" : [ "Macintosh HD:/Users/tmroyal/Documents/Composition/liveShit/cstemp/def2.csd" ],
+									"restore" : [ "Macintosh HD:/Users/tmroyal/Documents/Composition/liveShit/cstemp/def3.csd" ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_initial" : [ "" ],
@@ -2411,6 +2642,8 @@
 					"parameter_enable" : 1,
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 832.0, 198.5, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.599997043609619, 61.199996292591095, 68.599998593330383, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Off", "On" ],
@@ -2443,6 +2676,8 @@
 					"parameter_enable" : 1,
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 818.5, 170.0, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.599997043609619, 41.049994051456451, 68.599998593330383, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -2485,6 +2720,8 @@
 					"parameter_enable" : 1,
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 510.0, 326.5, 84.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 691.0, 151.650003015995026, 84.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -2516,6 +2753,8 @@
 					"parameter_enable" : 1,
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 408.0, 326.5, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 550.0, 151.650003015995026, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -2549,6 +2788,8 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 408.0, 417.0, 212.0, 108.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 550.0, 0.899991810321808, 230.0, 146.0 ],
 					"readonly" : 1,
 					"rounded" : 2.0,
 					"saved_attribute_attributes" : 					{
@@ -2846,8 +3087,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 503.0, 59.5, 67.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.599997043609619, 128.500000774860382, 73.199999570846558, 18.0 ],
 					"text" : "Autowatch",
-					"textjustification" : 0
+					"textjustification" : 1
 				}
 
 			}
@@ -2863,6 +3106,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 503.0, 83.0, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 13.899996340274811, 148.500000774860382, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Off", "On" ],
@@ -2928,7 +3173,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-11",
@@ -3398,6 +3642,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 401.0, 83.0, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.599997043609619, 91.349998533725739, 68.599998593330383, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Off", "On" ],
@@ -3444,6 +3690,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-18", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -3499,15 +3766,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 1 ],
-					"order" : 1,
-					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 1 ],
-					"order" : 0,
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -3515,15 +3773,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"order" : 1,
-					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"order" : 0,
 					"source" : [ "obj-33", 0 ]
 				}
 
@@ -3553,6 +3802,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-37", 1 ],
 					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-44", 0 ]
 				}
 
 			}
@@ -3619,10 +3875,17 @@
 			"obj-11::obj-12" : [ "filename", "filename", 0 ],
 			"obj-12" : [ "Toggle 3", "Toggle 3", 0 ],
 			"obj-17" : [ "Edit Button", "Edit Button", 0 ],
+			"obj-18::obj-13" : [ "live.text[4]", "live.text", 0 ],
+			"obj-18::obj-2" : [ "live.text[3]", "live.text", 0 ],
+			"obj-18::obj-28" : [ "live.text", "live.text", 0 ],
+			"obj-18::obj-29" : [ "live.text[1]", "live.text", 0 ],
+			"obj-18::obj-30" : [ "live.text[2]", "live.text", 0 ],
+			"obj-18::obj-42" : [ "live.drop", "live.drop", 0 ],
 			"obj-2" : [ "Float 8", "Float 8", 0 ],
 			"obj-21" : [ "Toggle 1", "Toggle 1", 0 ],
 			"obj-22" : [ "Toggle 2", "Toggle 2", 0 ],
 			"obj-27" : [ "Float 1", "Float 1", 0 ],
+			"obj-3" : [ "Float 9", "Float 9", 0 ],
 			"obj-31" : [ "Print Path", "Print Path", 0 ],
 			"obj-34" : [ "Copy To", "Copy To", 0 ],
 			"obj-35" : [ "Open Button", "Open Button", 0 ],
@@ -3661,8 +3924,26 @@
 				"type" : "TEXT",
 				"implicit" : 1
 			}
+, 			{
+				"name" : "fileNameLoader.maxpat",
+				"bootpath" : "~/Documents/Composition/liveShit/csoundScripter",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "filenameMangement.js",
+				"bootpath" : "~/Documents/Composition/liveShit/csoundScripter",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
  ],
-		"autosave" : 0
+		"autosave" : 0,
+		"boxgroups" : [ 			{
+				"boxes" : [ "obj-50", "obj-10", "obj-12", "obj-22", "obj-21", "obj-8", "obj-9", "obj-28", "obj-26" ]
+			}
+ ]
 	}
 
 }

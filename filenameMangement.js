@@ -180,8 +180,8 @@ Persistence.prototype.outputAllData = function(){
 Persistence.prototype.performOutput = function(fileinfo){
   outlet(0, [
     'data',
-    fileinfo.filename,
-    fileinfo.channelName
+    fileinfo.channelName,
+    fileinfo.filename
   ]);
 }
 

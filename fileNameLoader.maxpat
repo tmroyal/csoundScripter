@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2384.0, -994.0, 1070.0, 777.0 ],
+		"rect" : [ 3269.0, -227.0, 1002.0, 777.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -39,6 +39,34 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "live.comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 536.0, 423.5, 150.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 146.0, 3.5, 137.0, 18.0 ],
+					"text" : "Channel Name",
+					"textjustification" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "live.comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 521.0, 408.5, 150.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 3.5, 137.0, 18.0 ],
+					"text" : "Filename",
+					"textjustification" : 0
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-51",
 					"maxclass" : "newobj",
@@ -179,31 +207,6 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 30.5, 118.0, 119.0, 22.0 ],
 					"text" : "route filedisp vardisp"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"decodemode" : 1,
-					"id" : "obj-42",
-					"legend" : "",
-					"maxclass" : "live.drop",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 24.0, 216.0, 140.0, 60.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_invisible" : 1,
-							"parameter_longname" : "live.drop",
-							"parameter_shortname" : "live.drop",
-							"parameter_type" : 4
-						}
-
-					}
-,
-					"varname" : "live.drop"
 				}
 
 			}
@@ -382,6 +385,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 750.666666666666515, 265.0, 91.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 79.0, 283.0, 17.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -394,7 +399,7 @@
 
 					}
 ,
-					"text" : "Send to Csound",
+					"text" : "Send data to Csound",
 					"varname" : "live.text[4]"
 				}
 
@@ -504,6 +509,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 242.0, 338.0, 65.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 75.0, 57.0, 65.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -531,6 +538,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 341.0, 338.0, 65.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 225.0, 57.0, 65.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -558,6 +567,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 440.0, 338.0, 65.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 152.0, 57.0, 65.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -669,6 +680,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 128.0, 303.0, 65.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 57.0, 65.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -752,7 +765,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.5, 160.5, 112.0, 18.0 ],
-					"text" : "bufferManagement.js",
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 30.5, 133.0, 18.0 ],
 					"textjustification" : 0
 				}
 
@@ -774,7 +788,40 @@
 					"parameter_enable" : 0,
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 160.100000000000023, 158.0, 108.0, 23.0 ],
-					"text" : "Siq8reuqocj"
+					"presentation" : 1,
+					"presentation_rect" : [ 146.0, 30.5, 144.0, 23.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bordercolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 0.0 ],
+					"decodemode" : 1,
+					"id" : "obj-42",
+					"legend" : "",
+					"maxclass" : "live.drop",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 24.0, 216.0, 140.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -7.0, -1.0, 310.0, 105.0 ],
+					"saved_attribute_attributes" : 					{
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"valueof" : 						{
+							"parameter_invisible" : 1,
+							"parameter_longname" : "live.drop",
+							"parameter_shortname" : "live.drop",
+							"parameter_type" : 4
+						}
+
+					}
+,
+					"varname" : "live.drop"
 				}
 
 			}
@@ -1038,7 +1085,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "filenameMangement.js",
-				"bootpath" : "~/Documents/Composition/liveShit/multiBufferLoaded",
+				"bootpath" : "~/Documents/Composition/liveShit/csoundScripter",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
