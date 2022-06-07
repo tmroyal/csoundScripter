@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 1,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -77,8 +77,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 1,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -233,8 +233,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 1,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -780,7 +780,6 @@
 					"keymode" : 1,
 					"lines" : 1,
 					"maxclass" : "textedit",
-					"nosymquotes" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
@@ -795,33 +794,15 @@
 			}
 , 			{
 				"box" : 				{
-					"bordercolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 0.0 ],
-					"decodemode" : 1,
-					"id" : "obj-42",
-					"legend" : "",
-					"maxclass" : "live.drop",
+					"bordercolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
+					"id" : "obj-4",
+					"maxclass" : "dropfile",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 24.0, 216.0, 140.0, 60.0 ],
+					"patching_rect" : [ 30.5, 192.0, 130.0, 59.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -7.0, -1.0, 310.0, 105.0 ],
-					"saved_attribute_attributes" : 					{
-						"bordercolor" : 						{
-							"expression" : ""
-						}
-,
-						"valueof" : 						{
-							"parameter_invisible" : 1,
-							"parameter_longname" : "live.drop",
-							"parameter_shortname" : "live.drop",
-							"parameter_type" : 4
-						}
-
-					}
-,
-					"varname" : "live.drop"
+					"presentation_rect" : [ -3.5, 3.5, 300.0, 99.0 ]
 				}
 
 			}
@@ -1008,6 +989,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"midpoints" : [ 658.5, 426.0, 137.5, 426.0 ],
 					"source" : [ "obj-40", 0 ]
@@ -1018,14 +1006,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
 					"source" : [ "obj-41", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"midpoints" : [ 33.5, 369.5, 137.5, 369.5 ],
-					"source" : [ "obj-42", 0 ]
 				}
 
 			}
@@ -1075,7 +1055,6 @@
 			"obj-28" : [ "live.text", "live.text", 0 ],
 			"obj-29" : [ "live.text[1]", "live.text", 0 ],
 			"obj-30" : [ "live.text[2]", "live.text", 0 ],
-			"obj-42" : [ "live.drop", "live.drop", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1085,7 +1064,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "filenameMangement.js",
-				"bootpath" : "~/Documents/Composition/liveShit/csoundScripter",
+				"bootpath" : "~/Music/Ableton/User Library/Presets/Instruments/Max Instrument",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
